@@ -20,21 +20,25 @@
         flex: 100%;
         text-align: center;
         height: 150px !important;
+        order: 2;
     }
 
     .customDiv3 {
         height: 100px;
         text-align: center;
         padding: 10px;
+        order: 1;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .customDiv2 {   
         flex: 30%;
+        order: 1;
     }
 
     .customDiv3 {
         flex: 70%;
+        order: 2;
     }
 }
