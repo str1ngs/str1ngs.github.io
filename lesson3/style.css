@@ -1,0 +1,52 @@
+body {
+    background-color: lightcyan;
+}
+
+.client-color2 {
+    color: rgb(70, 248, 0);
+}
+
+.client-color {
+    color: rgb(253, 51, 0);
+    background-color: rgba(red, green, blue, alpha);
+}
+
+/* Kommentaarid */ 
+
+#customerID {
+    text-size: 10px;
+}
+
+.div1,.div2 {
+    height: 100px;
+    overflow: hidden; /* t2htis */
+    overflow-x: scroll;
+}
+
+.div2 {
+    background-color: violet;
+    border-style: dashed;
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    width: 200px;
+}
+
+table {
+    margin-top: 20px;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-style: solid;
+    padding: 10px;
+}
+
+.juku2 {
+    display: block; /*tavaline ploki sees/*
+}
+
+.juku3 {
+    display: none; /*n2htamatu*/
+}
