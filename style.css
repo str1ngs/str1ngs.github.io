@@ -1,51 +1,57 @@
     body {
     background-color: #aaa8d5;
-    padding: 10px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    
+    padding: 10px;
 }
 
-div.customDiv1 {
-    height: 100px !important;
+header {
     width: 100%;
     font-size: 80px;
     background-image: linear-gradient(225deg, #29324f 0%, #434086 48%, #6470ca 100%);
     border-radius: 15px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: #151438;
 }
 
 
 div.customDiv2 {
     background-color: rgb(12, 21, 48);
     border-radius: 15px;
-    flex: 16%;   /** Kui muuta flex width siis ei ole ääred ühtlasesd ja jookseb maha**/
+    flex: 1;   /** Kui muuta flex width siis ei ole ääred ühtlasesd ja jookseb maha**/
 }
 
 div.customDiv3 {
     background-color: #151438;
     border-radius: 15px;
     flex: 80%;
+    flex-grow: 2;
     min-height: 70vh;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-basis: auto;
+    justify-content: center;
+    
 }
 
 .card {
     filter: grayscale(100%);
     transition: all 0.2s ease-in-out;
     margin: 10px;
+    max-width: 20vw;
+    min-width: 200px;
+    
   }
-  
   .card:hover {
     filter: grayscale(0%);
   }
@@ -56,10 +62,13 @@ a:hover {
 
 ul {
     list-style-type: none;
-    text-align: center;
+    
     padding: 0px;
     padding-top: 10px;
+    margin: 10px;
+    margin-left: 10px;
 }
+
 
 a {
     text-decoration: none;
@@ -68,43 +77,9 @@ a {
     text-transform: uppercase;
 }
 
-.logo {
-    margin: 0px;
-    
-}
 
 .content-text,h1 {
     text-align: justify;
     padding: 10px;
     color: rgb(207, 206, 206);
-}
-
-
-@media only screen and (max-width: 650px) {
-   body {
-        padding: 1px;
-   }
-   
-    .customDiv2 {
-        flex: 100%;
-        height: 80px !important;
-        
-    }
-
-    ul {
-        padding: 10px;
-        text-align: left;
-    }
-
-    li {
-        display: inline;
-    }
-
-    .customDiv3 {
-        flex: 100%;
-    }
-
-    .card-container {
-        
-    }
 }
