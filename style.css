@@ -1,7 +1,6 @@
     body {
     background-color: #aaa8d5;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -13,8 +12,7 @@ main {
 
 header {
     width: 100%;
-    font-size: 80px;
-    background-image: linear-gradient(225deg, #29324f 0%, #434086 48%, #6470ca 100%);
+    background: linear-gradient(to right, rgb(10, 9, 26), rgba(12, 11, 32, 0));
     border-radius: 15px;
     text-align: left;
     color: #ffffff;
@@ -23,35 +21,31 @@ header {
 
 
 div.customDiv2 {
-    background-color: rgb(12, 21, 48);
+    background-color: #11001c;
     border-radius: 15px;
-    flex: 1;   /** Kui muuta flex width siis ei ole ääred ühtlasesd ja jookseb maha**/
+    flex: 1;   /** flex: 1 sets the flex-grow, flex-shrink, and flex-basis properties to 1, **/
 }
 
 div.customDiv3 {
     background-color: #151438;
     border-radius: 15px;
     flex: 80%;
-    flex-grow: 2;
     min-height: 70vh;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: center;
-    
+    justify-content: space-evenly;
 }
 
 .card {
     filter: grayscale(100%);
     transition: all 0.2s ease-in-out;
     margin: 10px;
-    max-width: 20vw;
-    min-width: 200px;
-    
-  }
+    flex: 1 0 25%;
+}
+
   .card:hover {
     filter: grayscale(0%);
   }
@@ -62,24 +56,69 @@ a:hover {
 
 ul {
     list-style-type: none;
-    
     padding: 0px;
     padding-top: 10px;
     margin: 10px;
     margin-left: 10px;
 }
-
-
 a {
     text-decoration: none;
     font-size: 20px;
     color: rgb(231, 227, 248);
     text-transform: uppercase;
 }
-
-
 .content-text,h1 {
     text-align: justify;
     padding: 10px;
     color: rgb(207, 206, 206);
+}
+
+.logo {
+    
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 100px;
+    background-color: #11001c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+@media (max-width: 519px) {
+    .card {
+        min-width: 42vh;
+        background-color: rgb(86, 80, 237);
+    }
+
+    header {
+        background-color: #2b0048;
+    }
+
+    div.customDiv2 {
+        background-color: #11001c;
+    }
+
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 520px) {
+    .card {
+        max-width: 50vh;
+        background-color: rgb(43, 144, 222);
+        justify-content: center;
+    }
 }
