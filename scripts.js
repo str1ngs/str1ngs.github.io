@@ -1,5 +1,7 @@
+var count = 1;
+
 function plus() {
-    count++;
+    count = count +1;
     document.getElementById("counter").innerHTML = count;
 }
 
