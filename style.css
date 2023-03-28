@@ -122,3 +122,10 @@ a {
         justify-content: center;
     }
 }
+
+.Custom_Card {
+    color: white;
+    padding: 10px;
+    justify-content: left;
+    order: -1;
+}
