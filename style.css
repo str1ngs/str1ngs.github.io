@@ -36,7 +36,7 @@ div.customDiv3 {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: ;
 }
 
 .card {
@@ -92,6 +92,20 @@ a {
     transform: scale(1.1);
   }
 
+table { 
+    margin: 20px;
+    color: white;
+}
+
+td { 
+    width: 100px; 
+    height: 100px; 
+    text-align: center; 
+    
+    border: 1px solid rgb(254, 254, 254); 
+    cursor: pointer; 
+}
+
 @media (max-width: 519px) {
     .card {
         min-width: 42vh;
@@ -117,9 +131,8 @@ a {
 
 @media (min-width: 520px) {
     .card {
-        max-width: 50vh;
+        max-width: 28vh;
         background-color: rgb(43, 144, 222);
-        justify-content: center;
     }
 }
 
